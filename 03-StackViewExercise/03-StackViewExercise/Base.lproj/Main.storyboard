@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_3_StackViewExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="FITNESS WITH FRIENDS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9p-k3-SFu">
+                                <rect key="frame" x="21.5" y="10" width="332.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="abz-C2-KAL">
+                                <rect key="frame" x="0.0" y="46" width="375" height="621"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Barbell" translatesAutoresizingMaskIntoConstraints="NO" id="sBX-1E-SAV">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="207"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beach" translatesAutoresizingMaskIntoConstraints="NO" id="Xsw-Lg-4Zd">
+                                        <rect key="frame" x="0.0" y="207" width="375" height="207"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Running" translatesAutoresizingMaskIntoConstraints="NO" id="PjL-au-VMA">
+                                        <rect key="frame" x="0.0" y="414" width="375" height="207"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="abz-C2-KAL" secondAttribute="bottom" id="NY2-r2-9k1"/>
+                            <constraint firstItem="abz-C2-KAL" firstAttribute="top" secondItem="p9p-k3-SFu" secondAttribute="bottom" id="SwZ-zW-eYl"/>
+                            <constraint firstItem="p9p-k3-SFu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="XGV-L0-n6I"/>
+                            <constraint firstItem="abz-C2-KAL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pJu-dU-Hzk"/>
+                            <constraint firstItem="p9p-k3-SFu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s1R-tx-JJb"/>
+                            <constraint firstAttribute="trailing" secondItem="abz-C2-KAL" secondAttribute="trailing" id="zhN-qZ-mdh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="117"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Barbell" width="413" height="230"/>
+        <image name="Beach" width="414" height="230"/>
+        <image name="Running" width="414" height="230"/>
+    </resources>
+</document>
